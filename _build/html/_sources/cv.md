@@ -58,41 +58,26 @@ Example of my work can be found [here](analysis_example.ipynb).
 
 To satisfy my eagerness for knowledge, I enroll in online courses in areas of **Artificial Intelligence** and **Software Engineering** that pique my interest and undertake independent projects during my leisure hours. A few examples of such projects include:
 
-:::{grid} 2
-:margin: 2
+
+::::{grid}
+:gutter: 3
 
 :::{grid-item-card}
-**Microsoft Certified: Azure Data Scientist Associate**
-:::
-
-:::{grid-item-card}
-**AWS Certified: Machine Learning – Specialty**
-:::
-
-:::{grid-item-card}
-**Deep Learning Specialization - Coursera**
+- **Microsoft Certified: Azure Data Scientist Associate**
+- **AWS Certified: Machine Learning - Specialty**
+- **Deep Learning Specialization - Coursera**
+- **Machine Learning Engineer Nanodegree - Udacity**
 :::
 
 :::{grid-item-card}
-**Machine Learning Engineer Nanodegree - Udacity**
-:::
+- **React Nanodegree - Udacity**
+- **Statistics Specialization: Introduction to Probability and Data, Inferential Statistics - Duke University, Coursera**
+- **Python Data Science and Machine Learning Bootcamp - Udemy**
+- **Mathematics for Machine Learning Specialization - Coursera**
 
-:::{grid-item-card}
-**React Nanodegree - Udacity**
 :::
+::::
 
-:::{grid-item-card}
-**Statistics Specialization: Introduction to Probability and Data, Inferential Statistics - Duke University, Coursera**
-:::
-
-:::{grid-item-card}
-**Python Data Science and Machine Learning Bootcamp - Udemy**
-:::
-
-:::{grid-item-card}
-**Mathematics for Machine Learning Specialization - Coursera**
-:::
-:::
 
 ## Publications
 

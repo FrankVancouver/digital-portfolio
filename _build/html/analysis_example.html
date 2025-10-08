@@ -187,7 +187,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Example of Analysis</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Titanic Dataset: Exploratory Data Analysis</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="citations.html">Acknowledgments</a></li>
 </ul>
 
@@ -384,17 +383,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Titanic Dataset: Exploratory Data Analysis</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demographic-characteristics-of-the-titanic-s-passengers">Demographic characteristics of the Titanic’s passengers</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-male-and-female-passengers">number of male and female passengers</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-male-and-female-passengers">number of male and female passengers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-origins-of-the-titanic-s-passengers">Explore the origins of the Titanic’s passengers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-which-passengers-traveled-with-their-families">Determine which passengers traveled with their families</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -582,9 +575,8 @@ memory usage: 69.7+ KB
 <p>sns.catplot(x=’Pclass’,data=titanic_df,hue=’Sex’,kind=’count’)</p>
 <p>Let’s explore passangers’ gender:</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="number-of-male-and-female-passengers">
-<h1>number of male and female passengers<a class="headerlink" href="#number-of-male-and-female-passengers" title="Link to this heading">#</a></h1>
+<section id="number-of-male-and-female-passengers">
+<h2>number of male and female passengers<a class="headerlink" href="#number-of-male-and-female-passengers" title="Link to this heading">#</a></h2>
 <p>sns.catplot(x=’Sex’,data=titanic_df,kind=’count’)</p>
 <p>Figure summary: there were considerably more male passengers onboard.</p>
 <p><strong><em>Note: It is important to acknowledge that gender is not binary and that there are many individuals who do not identify as strictly male or female. However, the dataset available for the Titanic passengers only includes information on male and female passengers. While this limitation may not fully capture the diversity of gender identities among the passengers, it is still valuable in providing insights into the demographics and social dynamics of the Titanic’s passengers.</em></strong></p>
@@ -635,7 +627,7 @@ Name: count, dtype: int64
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1e8b7292900&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1bc5c16e900&gt;
 </pre></div>
 </div>
 <img alt="_images/362c8ba6f17dcb7a9d6766ae940a23bca4ea83c8c0be751f2bcc113478be2085.png" src="_images/362c8ba6f17dcb7a9d6766ae940a23bca4ea83c8c0be751f2bcc113478be2085.png" />
@@ -660,13 +652,14 @@ Name: count, dtype: int64
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1e8b73f6490&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1bc5c2da490&gt;
 </pre></div>
 </div>
 <img alt="_images/d6be2969af7d57ba9aefdcce1e8907463580c47242a657c5f4073cc06144889b.png" src="_images/d6be2969af7d57ba9aefdcce1e8907463580c47242a657c5f4073cc06144889b.png" />
 </div>
 </div>
 <p>Figure summary: first class passengers were older that passagenrs of other class</p>
+</section>
 <section id="explore-the-origins-of-the-titanic-s-passengers">
 <h2>Explore the origins of the Titanic’s passengers<a class="headerlink" href="#explore-the-origins-of-the-titanic-s-passengers" title="Link to this heading">#</a></h2>
 <p>The <strong>Embarked</strong> columns are abbreviation of the following port of embarkation:</p>
@@ -688,7 +681,7 @@ Name: count, dtype: int64
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1e8b7760f50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1bc5c644f50&gt;
 </pre></div>
 </div>
 <img alt="_images/d25a7ba29a9ccf021200c6db1d72f2abc58eb63c8a88eb5a6a8839d1d986c835.png" src="_images/d25a7ba29a9ccf021200c6db1d72f2abc58eb63c8a88eb5a6a8839d1d986c835.png" />
@@ -732,7 +725,7 @@ Name: count, dtype: int64
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1e8b7491950&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x1bc5c371950&gt;
 </pre></div>
 </div>
 <img alt="_images/c0824594b49e0da77645794733f91bfbf69ce98d2e49812abe96b66229786d97.png" src="_images/c0824594b49e0da77645794733f91bfbf69ce98d2e49812abe96b66229786d97.png" />
@@ -806,17 +799,11 @@ Name: count, dtype: int64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Titanic Dataset: Exploratory Data Analysis</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demographic-characteristics-of-the-titanic-s-passengers">Demographic characteristics of the Titanic’s passengers</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-male-and-female-passengers">number of male and female passengers</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-of-male-and-female-passengers">number of male and female passengers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-origins-of-the-titanic-s-passengers">Explore the origins of the Titanic’s passengers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determine-which-passengers-traveled-with-their-families">Determine which passengers traveled with their families</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
